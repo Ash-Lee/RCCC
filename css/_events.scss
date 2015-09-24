@@ -1,0 +1,35 @@
+/*========================================*/
+  /* .events */
+/*========================================*/
+.events {
+    @include container-fixed();
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.events-r1,
+.events-r2 {
+    @include row();
+    padding: 15px 0 15px;
+}
+
+.events-r2 {
+    margin-top: 5px;
+}
+
+.events-r1-c1,
+.events-r1-c2 {
+    @include column(6);
+}
+
+.events-r2-c1,
+.events-r2-c2,
+.events-r2-c3,
+.events-r2-c4 {
+    @include column(3);
+}
+
+.events-r1-c1, .events-r1-c2,
+.events-r2-c1, .events-r2-c2, .events-r2-c3, .events-r2-c4 {
+    div { @extend %sub-event; }
+}

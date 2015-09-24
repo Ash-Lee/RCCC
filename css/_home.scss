@@ -1,0 +1,192 @@
+.nav-index {
+    margin-bottom: 0;
+}
+
+.welcome,
+.stories,
+.links {
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+
+/*========================================*/
+  /* .slideshow */
+/*========================================*/
+.slideshow {
+    @include container-full();
+    box-shadow: none;
+    border-top: 1px solid #B3B1B2;
+}
+
+.slideshow-r1 {
+    @include row();
+}
+
+.slideshow-r1-c1 {
+    @include column(12);
+    padding: 0;
+    
+    #slider {
+        height: 450px;
+        width: auto;
+        overflow: hidden;
+        position: relative;
+
+        div {
+            height: 450px;
+            min-width: 100%;
+            float: left;
+            display: none;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        div[id="1"] { background-image: url("../assets/home/slideshow/rccc-building.jpg"); }
+        div[id="2"] { background-image: url("../assets/home/slideshow/beach1.jpg"); }
+        div[id="3"] { background-image: url("../assets/home/slideshow/beach2.jpg"); }
+        div[id="4"] { background-image: url("../assets/home/slideshow/beach3.jpg"); }
+    
+        a {
+            height: 450px;
+            width: 40px;
+            position: absolute;
+            padding: 5px 10px;
+            background-color: #F0F0F0;
+            opacity: 0.1;
+            text-decoration: none;
+            
+            &:hover { opacity: 0.5 };
+        }
+
+        .left { left: 0; }
+
+        .right { right: 0; }
+    }
+}
+
+
+
+/*========================================*/
+  /* .welcome */
+/*========================================*/
+.welcome {
+    @include container-fixed();
+}
+
+.welcome-r1 {
+    @include row();
+    padding: 15px 0 15px;
+}
+
+.welcome-r1-c1 {
+    @include column(8);
+    
+    h1 { font-size: 1.2rem; }
+
+    p { margin-bottom: 1rem; }
+}
+
+.welcome-r1-c2 {
+    @include column(4);
+    
+    a {
+        @extend %sub-link;      //See CSS Styles - Template Styles - Placeholders + Mixins
+        margin-top: 30px;
+    } 
+}
+
+
+
+/*========================================*/
+  /* .stories */
+/*========================================*/
+.stories {
+    @include container-fixed();
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.story-r1 {
+    @include row();
+    margin-bottom: 20px;
+}
+
+.story-r1-c1 {
+    @include column(12);
+    @extend %quotes;
+    position: relative;
+
+    .story-pic-1 {
+        float: right;
+        height: 200px;
+        width: 300px;
+        border-radius: 5px;
+        margin-left: 15px;
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    blockquote {
+        margin-top: 40px;
+        margin-right: 300px;
+    }
+}
+
+.story-r2 {
+    @include row();
+}
+
+.story-r2-c1 {
+    @include column(12);
+    @extend %quotes;
+    position: relative;
+
+    .story-pic-2 {
+        float: left;
+        height: 200px;
+        width: 300px;
+        border-radius: 5px;
+        margin-right: 60px;
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    blockquote {
+        margin-top: 40px;
+        margin-left: 330px;
+    }
+}
+
+
+
+/*========================================*/
+  /* .links */
+/*========================================*/
+.links {
+    @include container-fixed();
+    margin-bottom: 15px;
+}
+
+.links-r1 {
+    @include row();
+    padding: 15px 0 15px;
+}
+
+.links-r1-c1,
+.links-r1-c2,
+.links-r1-c3,
+.links-r1-c4 {
+    @include column(3);
+
+    a { @extend %sub-link }
+}

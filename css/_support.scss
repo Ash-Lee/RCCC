@@ -1,0 +1,69 @@
+/*========================================*/
+  /* .support */
+/*========================================*/
+.support {
+    @include container-fixed();
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.support-r1 {
+    @include row();
+    padding: 15px 0 15px;
+}
+
+.support-r1-c1 {
+    @include column(8);
+    
+    p { margin-bottom: 1rem; }
+
+    .support-header {
+        margin-bottom: 35px;
+        
+        h1 { font-size: 1.2rem; }
+    }
+
+    .therapy {
+        @extend .clearfix;
+        position: relative;
+        margin-bottom: 65px;
+        
+        figure {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 100px;
+            margin: 0 30px 65px 0;
+            border-radius: 100%;
+            overflow: hidden;
+            border: 1px solid #B3B1B2;
+
+            img { width: 100%; }
+        }
+
+        div {
+            margin-left: 130px;
+
+            h2 { margin-bottom: 0.6rem; }
+
+            a {
+                font-size: 14px;
+                
+                &:hover { text-decoration: underline; }
+            }
+        }
+    }
+
+    div:nth-child(6) { margin-bottom: 5px; }
+}
+
+.support-r1-c2 {
+    @include column(4);
+
+    a {
+        @extend %sub-link;      //See CSS Styles - Template Styles - Placeholders + Mixins
+        margin-top: 30px;
+    }
+}

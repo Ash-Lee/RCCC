@@ -1,0 +1,102 @@
+.donate,
+.fundraise,
+.friends {
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+%virgin-link {
+    margin: 30px auto 0;
+    width: 200px;
+    border-radius: 13px;
+    
+    &:hover { box-shadow: 0 3px 8px -1px rgba(0,0,0,0.2); }
+
+    img { max-width: 100%; }
+}
+
+
+
+/*========================================*/
+  /* .donate */
+/*========================================*/
+.donate {
+    @include container-fixed();
+}
+
+.donate-r1 {
+    @include row();
+    padding: 15px 0 15px;
+}
+
+.donate-r1-c1 {
+    @include column(9);
+}
+
+.donate-r1-c2 {
+    @include column(3);
+    text-align: center;
+
+    a { @extend %virgin-link; }
+}
+
+
+
+/*========================================*/
+  /* .fundraise */
+/*========================================*/
+.fundraise {
+    @include container-fixed();
+}
+
+.fundraise-r1 {
+    @include row();
+    padding: 15px 0 15px;
+}
+
+.fundraise-r1-c1 {
+    @include column(9);
+}
+
+.fundraise-r1-c2 {
+    @include column(3);
+    text-align: center;
+
+    a { @extend %virgin-link; }
+}
+
+
+
+/*========================================*/
+  /* .friends */
+/*========================================*/
+.friends {
+    @include container-fixed();
+    margin-bottom: 15px;
+}
+
+.friends-r1 {
+    @include row();
+    padding: 15px 0 15px;
+}
+
+.friends-r1-c1 {
+    @include column(8);
+
+    p {
+        margin-bottom: 1.5rem;
+
+        &:nth-of-type(3) { margin-bottom: 1rem; }
+
+        &:last-of-type { margin-bottom: 0px; }
+    }
+}
+
+.friends-r1-c2 {
+    @include column(4);
+    
+    a {
+        @extend %sub-link;
+        margin-top: 30px;
+    }
+}

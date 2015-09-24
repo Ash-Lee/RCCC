@@ -1,0 +1,55 @@
+/*========================================*/
+  /* .volunteer */
+/*========================================*/
+.volunteer {
+    @include container-fixed();
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.volunteer-r1,
+.volunteer-r2 {
+    @include row();
+}
+
+.volunteer-r2 {
+    margin-top: 15px;
+}
+
+.volunteer-r1-c1 {
+    @include column(8);
+}
+
+.volunteer-r1-c2 {
+    @include column(4);
+
+    a { 
+        @extend %sub-link;
+        margin-top: 30px;
+    }
+}
+
+.volunteer-r2-c1 {
+    @include column(12);
+    @extend %quotes;
+    position: relative;
+
+    .volunteer-pic {
+        float: left;
+        margin-top: 15px;
+        height: 200px;
+        width: 300px;
+        
+        img { 
+            max-width: 100%;
+            border-radius: 5px
+        }
+    }
+
+    blockquote {
+        margin-top: 20px;
+        margin-left: 315px;
+    }
+}
