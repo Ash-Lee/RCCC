@@ -15,6 +15,7 @@ Help improve awareness within the local community by developing a website to ext
 ##### To Do List
 <ul>
 	<li>Replace stock photos and filler text</li>
+    <li>Improve design details</li>
 	<li>Media queries - fully responsive</li>
 	<li>Cross browser compatibility - JS scripts</li>
 	<li>Search engine optimisation</li>

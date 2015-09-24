@@ -688,6 +688,8 @@ li {
   padding-right: 15px; }
   .about-r1-c1 p {
     margin-bottom: 1rem; }
+    .about-r1-c1 p:last-of-type {
+      margin-bottom: 0; }
   .about-r1-c1 .float-1, .about-r1-c1 .float-2 {
     width: 300px;
     height: 200px;
@@ -700,8 +702,7 @@ li {
     margin-left: 20px; }
   .about-r1-c1 .float-2 {
     float: left;
-    margin-right: 20px;
-    margin-bottom: 0; }
+    margin-right: 20px; }
 
 /*========================================*/
 /* .faq */
