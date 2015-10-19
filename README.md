@@ -7,7 +7,7 @@ Help improve awareness within the local community by developing a website to ext
 <ul>
 	<li>Experience of designing a website from beginning to end for a local charity - Maintained a consistent theme to improve readability and navigation.</li>
 	<li>Previous projects show fairly specific CSS - Attempted to reduce specificity with better use of cascading styles and class names.</li>
-	<li>CSS extension language SASS with SCSS syntax - Nesting, mixins, inheritance, operators and variables</li>
+	<li>CSS extension language SASS with SCSS syntax - Nesting, mixins, inheritance, operators and variables.</li>
 	<li>Applied JavaScript knowledge to successfully implement and adapt a generic image slider carousel script.</li>
 	<li>Successfully applied and refined personal grid framework.</li>
 </ul>
